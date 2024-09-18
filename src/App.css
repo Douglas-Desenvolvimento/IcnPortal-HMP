@@ -1,0 +1,166 @@
+#root {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* estilo customizado */
+
+/* styles.css */
+.admin-col {
+  background-color: #ff0000;
+  /* Cor de fundo para colunas de admin */
+  color: #ffffff;
+  /* Cor do texto para colunas de admin */
+}
+
+.user-col {
+  background-color: #00ff00;
+  /* Cor de fundo para colunas de usuário */
+  color: #000000;
+  /* Cor do texto para colunas de usuário */
+}
+
+.tech-col {
+  background-color: #0000ff;
+  /* Cor de fundo para colunas de técnico */
+  color: #ffffff;
+  /* Cor do texto para colunas de técnico */
+}
+
+.width-800 {
+  width: 800px;
+  height: 800px;
+  /* Largura de 800px */
+
+}
+
+.shadow-custom {
+  box-shadow: 0 15px 20px -3px rgba(255, 255, 255, 0.5), 0 10px 15px -2px rgba(255, 255, 255, 0.3);
+  /* Sombra branca mais forte */
+}
+
+.shadow-custom-light {
+  box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.1), 0 4px 6px -2px rgba(255, 255, 255, 0.05);
+  /* Sombra branca */
+}
+
+.image-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.expand {
+  width: calc(100% - 64px);
+  /* Ajuste o valor conforme necessário */
+}
+
+.shrink {
+  width: calc(100% - 200px);
+  /* Ajuste o valor conforme necessário */
+}
+
+.navbar-wrapper {
+  width: 100%;
+  position: static;
+}
+
+.custom-navbar {
+  height: 75px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  box-sizing: border-box;
+
+}
+
+.navbar-right-section {
+  display: flex;
+  align-items: start;
+  padding-right: 1%;
+}
+
+.custom-navbar .CButton,
+.custom-navbar .CNavbarBrand,
+.custom-navbar .CAvatar {
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+
+.custom-navbar .avatar-img {
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+}
+
+.center-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.fade-enter {
+  opacity: 0.01;
+  transform: scale(0.9);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-exit-active {
+  opacity: 0.01;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
